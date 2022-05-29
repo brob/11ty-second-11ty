@@ -5,4 +5,4 @@ This is the future home of examples from what will hopefully be a full series of
 Table of Contents
 
 * [Using renderFile for SVG embedding](https://github.com/brob/11ty-second-11ty/tree/main/render)
-* [Building your first 11ty Collection]()
+* [Building your first 11ty Collection](https://github.com/brob/11ty-second-11ty/tree/main/collection)
