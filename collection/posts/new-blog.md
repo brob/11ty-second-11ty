@@ -1,5 +1,6 @@
 ---
 title: "New Blog"
+tags: "posts"
 ---
 
 

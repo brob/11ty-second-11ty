@@ -8,6 +8,12 @@
 </head>
 <body>
     <h1>Hello World</h1>
+    {% renderTemplate "md" %}
+        # I am a title
+
+        * I am a list
+        * I am a list
+    {% endrenderTemplate %}
     {% renderFile "./assets/smiley.html" %}
 </body>
 </html>
