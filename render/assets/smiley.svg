@@ -1,0 +1,24 @@
+{% if smile == "yellow" %}
+<svg viewBox="0 0 200 200" width="400"  height="400" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" fill="yellow" r="78" stroke="black" stroke-width="3"/>
+  <g class="eyes">
+    <circle cx="61" cy="82" r="12"/>
+    <circle cx="127" cy="82" r="12"/>
+  </g>
+  <path d="m136.81 116.53c.69 26.17-64.11 42-81.52-.73" style="fill:none; stroke: black; stroke-width: 3;"/>
+</svg>
+
+
+{% else %}
+<svg id="svg" viewBox="0 0 120 120">
+  <g id="face" transform="translate(60 60)">
+    <circle id="facecircle" cx="0" cy="0" r="50" stroke="#000000" stroke-width="2" fill="#ff0000"></circle>
+    <circle cx="-20" cy="-10" r="5" fill="#000000"></circle>
+    <circle cx="20" cy="-10" r="5" fill="#000000"></circle>
+
+    <g id="smile" transform="translate(0, 25)">
+      <path id="smilepath" fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round" d="M-20,-10 C-20,10 20,10 20,-10"></path>
+    </g>
+  </g>
+</svg>
+{% endif %}
