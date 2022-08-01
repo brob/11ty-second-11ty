@@ -8,5 +8,10 @@
 </head>
 <body>
     <h1>11ty Second 11ty: Data Example</h1>
+    {{ siteSetting.name }}
+    {{ siteSetting.description }}
+    {% for number in siteSetting.myArray %}
+        <li>{{ number }}</li>
+    {% endfor %}
 </body>
 </html>

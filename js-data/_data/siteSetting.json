@@ -1,0 +1,5 @@
+{
+    "name": "Data Example",
+    "description": "A data example site for 11ty second 11ty",
+    "myArray": [1, 2, 3, 4, 5]
+}

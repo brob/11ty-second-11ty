@@ -11,11 +11,10 @@ svg:
     <title>Document</title>
 </head>
 <body>
-
-{% renderTemplate "liquid", settings %}
-    <p>The date is: {{ today | date: "%B %d, %y" }}</p>
-{% endrenderTemplate %}
-
+    {% renderTemplate "liquid", settings %}
+        <h1>The date is: {{ today | date: "%B %d, %Y" }}</h1>
+    {% endrenderTemplate %}
+        
 
     {% renderTemplate "liquid,md" %}
 # I am a title
