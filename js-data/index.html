@@ -10,7 +10,12 @@
     <h1>11ty Second 11ty: Data Example</h1>
     {{ siteSetting.name }}
     {{ siteSetting.description }}
-   
-
+    {{ settings.date | date: "%Y" }}
+    <h1>Pokemon from the API</h1>
+    <ol>
+    {% for pokemon in pokemon %}
+        <li>{{ pokemon.name }}</li>
+    {% endfor %}
+    </ol>
 </body>
 </html>
