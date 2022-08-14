@@ -9,5 +9,8 @@
 <body>
     <h1>11ty Second 11ty: Filter Example</h1>
     <h2>{{ "hi there" }}</h2>
+    <h2>{{ "hi there" | slugify }}</h2>
+    <h2>{{ "hi there" | uppercase }}</h2>
+    <h2>{{ "hi there" | slugify | uppercase | color: "red" }}</h2>
 </body>
 </html>
