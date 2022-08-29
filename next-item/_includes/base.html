@@ -14,7 +14,19 @@
     
     {{ content }}
 
+    {% assign previousPost = collections.posts | getPreviousCollectionItem: page %}
+    {% assign nextPost = collections.posts | getNextCollectionItem: page %}
 
+    {% if previousPost %}
+    <p>
+        Previous Blog Post: <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a>
+    </p>
+    {% endif %}
+    {% if nextPost %}
+        <p>
+            Next Blog Post: <a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+        </p>
+    {% endif %}
 
 
     
