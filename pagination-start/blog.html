@@ -1,5 +1,19 @@
 ---
 layout: base.html
+pagination: 
+    data: collections.posts
+    size: 3
+    alias: posts
 ---
 
 <h1>Blog posts with pagination</h1>
+
+<ol>
+    {% for post in posts %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {% endfor %}
+</ol>
+
+{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous page</a>{% endif %}
+ | 
+{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next page</a>{% endif %}
